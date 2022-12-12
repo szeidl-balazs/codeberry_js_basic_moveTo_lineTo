@@ -1,7 +1,11 @@
 function pageLoaded () {
     var canvas = document.getElementById('myCanvas');
     var context = canvas.getContext('2d');
-    context.fillRect(175,100,100,100);  
+    context.beginPath();
+    context.moveTo(0,300);
+    context.lineTo(450,0);
+    context.strokeStyle = 'red';
+    context.stroke();
 
 }
 
